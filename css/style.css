@@ -22,11 +22,7 @@
 
 }
 
-img {
-    width: 30px;
-   
-   
-}
+
 
 .text-medium {
     font-size: var(--text-medium);
@@ -115,6 +111,10 @@ ul li , ol li {
 .sidebar {
     padding: 0.5rem 1.2rem;
     gap: 25px;
+}
+
+.sidebar img:not(.logo) {
+    width: 30px;
 }
 
 .logo {
@@ -258,3 +258,14 @@ ul li , ol li {
 }
 
 /* -------------------------------------------- */
+
+
+.row {
+    display: flex;
+}
+
+
+.song-img img {
+    max-width: 100%;
+    
+  }
