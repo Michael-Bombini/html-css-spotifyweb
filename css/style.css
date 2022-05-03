@@ -296,14 +296,13 @@ ul li , ol li {
 
 .row {
     display: flex;
-
-}
-
-.col {
     padding: 1rem;
-}
+    flex-wrap: wrap;
+    gap : 40px ;
 
-.song-img img {
-    max-width: 100%;
-    
-  }
+}
+.square {
+    background: red;
+    aspect-ratio: 1/1;
+    flex-basis: calc(100% /6 - 40px );
+}
