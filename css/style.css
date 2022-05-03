@@ -147,6 +147,10 @@ ul li , ol li {
    vertical-align: middle;
 }
 
+.sidebar-switch-section ul li span {
+    font-size: 0.9rem;
+}
+
 .playlist-square {
     width: 20px;
     height: 20px;
@@ -185,7 +189,7 @@ ul li , ol li {
 .user-info .upper-info {
     display: flex;
     gap: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.894);
     font-size: 0.9rem;
     align-items: center;
     padding-bottom: 0.3rem;
@@ -224,8 +228,33 @@ ul li , ol li {
     border: 1px solid #fff;
     background: transparent;
     color: #fff;
+    margin-right: 0.3rem;
     font-size: 0.8rem;
-    margin : 0 1.5rem;
     text-align: center;
     padding: 1rem 2.5rem;
 }
+
+/* -------------------------------------------- */
+
+
+/* NAV CATEGORIES  STYLE */
+
+.nav-categories {
+    color: var(--color-gray-light);
+    gap: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.nav-categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    color: rgb(131, 131, 131);
+    padding: 1.5rem 1rem;
+    gap: 40px;
+}
+
+/* -------------------------------------------- */
