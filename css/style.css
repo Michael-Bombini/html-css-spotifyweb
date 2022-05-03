@@ -126,6 +126,11 @@ ul li , ol li {
     padding: 0.5rem 0;
 }
 
+.sidebar-switch-section ul li:hover{
+    color: var(--color-white);
+    cursor: pointer;
+}
+
 .sidebar-switch-section ul li:first-child {
     position: relative;
 }
@@ -173,6 +178,13 @@ ul li , ol li {
     transform: translate(-50% , -50%);
 }
 
+.playlist-square:hover{
+    background: var(--color-white);
+    cursor: pointer;
+}
+
+
+
 .playlist h1 {
     margin-bottom: 0.8rem;
 }
@@ -184,6 +196,13 @@ ul li , ol li {
 .playlist ol li{
     padding: 0.4rem 0;
 }
+
+.playlist ol li:hover{
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+
 
 
 .user-info .upper-info {
@@ -197,6 +216,11 @@ ul li , ol li {
 
 .user-info .upper-info img {
     vertical-align: middle;
+}
+
+.user-info .upper-info span:hover{
+    color: var(--color-white);
+    cursor: pointer;
 }
 
 .user-info .bottom-info {
@@ -234,6 +258,11 @@ ul li , ol li {
     padding: 1rem 2.5rem;
 }
 
+
+.topbar button:hover {
+    transform: scale(1.1);
+}
+
 /* -------------------------------------------- */
 
 
@@ -257,13 +286,22 @@ ul li , ol li {
     gap: 40px;
 }
 
+.nav-categories ul li:hover{
+    color: var(--color-white);
+    cursor: pointer;
+}
+
 /* -------------------------------------------- */
 
 
 .row {
     display: flex;
+
 }
 
+.col {
+    padding: 1rem;
+}
 
 .song-img img {
     max-width: 100%;
