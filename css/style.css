@@ -1,5 +1,67 @@
 * {
   margin : 0 ; 
   padding : 0 ; 
-  box-sizing : border-box ; 
+  box-sizing : border-box ;
+}
+
+:root {
+    --color-main : #141922;
+    --color-player : #282828;
+    --color-bar : #080B12;
+    --color-black : #000000;
+    --color-gray : #646464;
+    --color-white : #fff;
+}
+
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.bottom-player {
+    padding: 1.5rem 0;
+    flex-shrink: 0;
+    background: var(--color-player);
+}
+
+
+.topbar {
+    padding: 1.5rem 0;
+    flex-shrink: 0;
+    background: var(--color-bar);
+}
+    
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 250px;
+    background: var(--color-black);
+    color: var(--color-gray);
+    
+}
+  
+
+
+.songs-container {
+    background: var(--color-main);
 }
