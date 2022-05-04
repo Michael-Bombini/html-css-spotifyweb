@@ -372,6 +372,7 @@ ul li , ol li {
     bottom: 0;
     right: 0;
     background: rgba(0,0,0,0.5);
+    
 }
 
 
@@ -384,7 +385,25 @@ ul li , ol li {
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
+    
 }
+
+.square-img#circle-img:hover::before  {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    
+}
+
+
+
+
 
 
 @media screen and (max-width : 1300px) {
