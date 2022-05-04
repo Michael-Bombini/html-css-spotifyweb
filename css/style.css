@@ -388,10 +388,9 @@ ul li , ol li {
 .player-middle {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
 }
 
 .player-middle-top {
@@ -421,16 +420,15 @@ ul li , ol li {
     height: 35px;
 }
 
-.player-middle .timebar {
+.timebar {
     height: 6px;
     border-radius: 20px;
     border: none;
     background: var(--color-gray);
-    width: 500px;
   
 }
 
-.player-middle .timebar-i {
+.timebar-i {
     height: 6px;
     border-radius: 20px;
     border: none;
@@ -439,10 +437,30 @@ ul li , ol li {
     
 }
 
+.player-middle .timebar {
+    width: 500px;
+}
 
+
+.player-right {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 .player-right svg {
     width: 20px;
     height: 20px;
     fill: #fff;
 }
+
+.player-right .timebar {
+    width: 140px;
+}
+
+.player-right .timebar-i {
+    width: 20%;
+}
+
+/* -------------------------------------------- */
