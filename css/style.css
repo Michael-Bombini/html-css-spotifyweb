@@ -85,6 +85,8 @@ ul li , ol li {
     padding: 1rem 0;
     flex-shrink: 0;
     background: var(--color-player);
+    width: 100%;
+    overflow: hidden;
 }
 
 
@@ -407,9 +409,38 @@ ul li , ol li {
 /* PLAYERBAR SECTION STYLE */
 
 
-
+svg {
+    width: 30px;
+    height: 30px;
+}
 
 .player-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-left-img , .player-left-title , .player-left-icons {
+    display: inline-block;
+    margin : 0 0.7rem;
+    vertical-align: middle;
+} 
+
+.player-left-img {
+    width: 50px;
+}
+
+.player-left-img img {
+    width: 100%;
+}
+
+.player-left-icons i {
+    transform: scale(1.2);
+    padding: 0 0.5rem;
+    color: var(--color-gray-light);
+}
+
+ /* .player-content {
     justify-content: space-between;
     display: flex;
     gap: 50px;
@@ -518,7 +549,7 @@ ul li , ol li {
 
 .player-right .timebar-i {
     width: 20%;
-}
+}  */
 
 /* -------------------------------------------- */
 
@@ -538,8 +569,16 @@ ul li , ol li {
 
 @media screen and (max-width : 900px) {
 
+    .player-left-icons i {
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+
+
     .square {
         flex-basis: calc(100% / 2 - 30px);
     }
+
+
     
 }
