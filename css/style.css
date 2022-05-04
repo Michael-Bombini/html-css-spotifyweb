@@ -18,7 +18,7 @@
     --color-white : #fff;
     --text-medium : 1rem ;
     --text-big : 2.4rem ; 
- 
+    --text-small : 0.8rem;
 
 }
 
@@ -32,6 +32,10 @@
     font-size: var(--text-big);
 }
 
+.text-small {
+    font-size: var(--text-small);
+}
+
 .text-white {
     color: #fff;
 }
@@ -39,6 +43,10 @@
 
 h1 {
     color: #fff;
+}
+
+h2 {
+    color: #A3A3A3;
 }
 
 ul li , ol li {
@@ -295,6 +303,14 @@ ul li , ol li {
 /* -------------------------------------------- */
 
 
+/* SONGS CONTENT STYLE */
+/* NOT COMPLETED */
+
+.songs-container h1 {
+    padding: 1rem;
+}
+
+
 .row {
     display: flex;
     padding: 1rem;
@@ -302,6 +318,9 @@ ul li , ol li {
     gap : 10px ;
 
 }
+
+
+
 .square {
     background: rgb(202, 186, 186);
     aspect-ratio: 1/1;
@@ -309,9 +328,6 @@ ul li , ol li {
 }
 
 
-.songs-container h1 {
-    padding: 1rem;
-}
 
 .square img {
     width: 100%;
@@ -334,4 +350,99 @@ ul li , ol li {
         flex-basis: calc(100% / 2 - 10px);
     }
     
+}
+
+/* NOT COMPLETED */
+/* -------------------------------------------- */
+
+.player-content {
+    justify-content: space-between;
+    display: flex;
+    gap: 50px;
+}
+
+
+.player-left {
+    padding: 0 1rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.player-left img {
+    width: 60px;
+   
+}
+
+.player-left-icons {
+   padding-left: 1rem;
+   display: flex;
+   gap: 15px;
+}
+
+.player-left i{
+    color: rgba(242, 242, 242, 0.525);
+}
+
+
+.player-middle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.player-middle-top {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-middle-bottom {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.player-middle svg {
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+}
+
+.player-middle svg:nth-child(3) {
+    fill: #fff;
+    width: 35px;
+    height: 35px;
+}
+
+.player-middle .timebar {
+    height: 6px;
+    border-radius: 20px;
+    border: none;
+    background: var(--color-gray);
+    width: 500px;
+  
+}
+
+.player-middle .timebar-i {
+    height: 6px;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+    width: 30%;
+    
+}
+
+
+
+.player-right svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
 }
