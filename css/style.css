@@ -304,7 +304,7 @@ ul li , ol li {
 
 
 /* SONGS CONTENT STYLE */
-/* NOT COMPLETED */
+
 
 .songs-container h1 {
     padding: 1rem;
@@ -315,16 +315,15 @@ ul li , ol li {
     display: flex;
     padding: 1rem;
     flex-wrap: wrap;
-    gap : 10px ;
+    gap : 30px ;
 
 }
 
 
 
 .square {
-    background: rgb(202, 186, 186);
     aspect-ratio: 1/1;
-    flex-basis: calc(100% / 6 - 10px );   
+    flex-basis: calc(100% / 6 - 30px );   
 }
 
 
@@ -334,11 +333,50 @@ ul li , ol li {
     display: block;
 }
 
+.square .square-text {
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.square .square-text h1{
+    padding-bottom: 0.6rem;
+    font-size: 1.175rem;
+}
+
+.square-img {
+    position: relative;
+}
+
+.square-img:hover::before  {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+
+.square-img:hover::after  {
+    font-family: "Font Awesome 5 Free";
+    content: "\f144"; 
+    position: absolute;
+    font-size: 4rem;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+
 
 @media screen and (max-width : 1300px) {
 
     .square {
-        flex-basis: calc(100% / 4 - 10px);
+        flex-basis: calc(100% / 4 - 30px);
     }
     
 }
@@ -347,13 +385,19 @@ ul li , ol li {
 @media screen and (max-width : 900px) {
 
     .square {
-        flex-basis: calc(100% / 2 - 10px);
+        flex-basis: calc(100% / 2 - 30px);
     }
     
 }
 
-/* NOT COMPLETED */
+
 /* -------------------------------------------- */
+
+
+/* PLAYERBAR SECTION STYLE */
+
+
+
 
 .player-content {
     justify-content: space-between;
