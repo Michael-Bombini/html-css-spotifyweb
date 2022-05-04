@@ -441,116 +441,49 @@ svg {
     color: var(--color-gray-light);
 }
 
- /* .player-content {
-    justify-content: space-between;
-    display: flex;
-    gap: 50px;
-}
-
-
-.player-left {
-    padding: 0 1rem;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    max-width: 400px;
-}
-
-.player-left img {
-    width: 60px;
-   
-}
-
-.player-left-icons {
-   padding-left: 1rem;
-   display: flex;
-   gap: 15px;
-}
-
-.player-left i{
-    color: rgba(242, 242, 242, 0.525);
-}
-
-
-.player-middle {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
-}
-
 .player-middle-top {
     display: flex;
-    gap: 30px;
     align-items: center;
-    justify-content: center;
-}
-
-.player-middle-bottom {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.3rem;
 }
 
 .player-middle svg {
-    fill: #fff;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    margin: 0.8rem;
+    fill: var(--color-white);
 }
 
 .player-middle svg:nth-child(3) {
-    fill: #fff;
-    width: 35px;
-    height: 35px;
-}
-
-.timebar {
-    height: 6px;
-    border-radius: 20px;
-    border: none;
-    background: var(--color-gray);
-    max-width: 300px;
-    width: 15%;
-}
-
-.timebar-i {
-    height: 6px;
-    border-radius: 20px;
-    border: none;
-    background: #fff;
-    width: 30%;
+    width: 40px;
+    height: 40px;
     
 }
 
-.player-middle .timebar {
-    width: 500px;
+.timebar {
+    width: 150px;
+    height: 5px;
+    border-radius: 20px;
+    background: var(--color-gray);
+    display: inline-block;
+    margin: 0 0.4rem;
+    vertical-align: middle;
 }
 
-
-.player-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    max-width: 400px;
+.timebar-i {
+    width: 25%;
+    height: 5px;
+    border-radius: 20px;
+    background: var(--color-white);
 }
+
 
 .player-right svg {
     width: 20px;
     height: 20px;
-    fill: #fff;
+    margin: 0.8rem;
+    fill: var(--color-white);
+    vertical-align: middle;
 }
-
-.player-right .timebar {
-    width: 140px;
-}
-
-.player-right .timebar-i {
-    width: 20%;
-}  */
 
 /* -------------------------------------------- */
 
@@ -582,6 +515,12 @@ svg {
     .square {
         flex-basis: calc(100% / 2 - 30px);
     }
+
+
+    .player-left-icons i {
+        display: block;
+        margin-bottom: 0.4rem;
+    }
     
 }
 
@@ -589,10 +528,7 @@ svg {
 
 @media screen and (max-width : 700px) {
 
-    .player-left-icons i {
-        display: block;
-        margin-bottom: 0.4rem;
-    }
+
 
 
     .sidebar {
