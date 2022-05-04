@@ -53,7 +53,9 @@ ul li , ol li {
     list-style-type: none;
 }
 
-
+.border-r-50 {
+    border-radius: 50%;
+}
 
 
 .app {
@@ -80,7 +82,7 @@ ul li , ol li {
 }
 
 .bottom-player {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     flex-shrink: 0;
     background: var(--color-player);
 }
@@ -121,13 +123,18 @@ ul li , ol li {
     gap: 25px;
 }
 
-.sidebar img:not(.logo) {
+.sidebar img:not(.logo):not(.logo-small) {
     width: 30px;
 }
 
 .logo {
     width: 150px;
     padding-top: 1.2rem;
+
+}
+
+.logo-small {
+    display: none;
 }
 
 .sidebar-switch-section ul li {
@@ -306,9 +313,17 @@ ul li , ol li {
 /* SONGS CONTENT STYLE */
 
 
-.songs-container h1 {
+.headings {
     padding: 1rem;
 }
+
+.headings h2 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-gray);
+}
+
+
 
 
 .row {
@@ -345,6 +360,7 @@ ul li , ol li {
 
 .square-img {
     position: relative;
+    margin-bottom: 0.7rem;
 }
 
 .square-img:hover::before  {
@@ -369,8 +385,6 @@ ul li , ol li {
     left: 50%;
     transform: translate(-50% , -50%);
 }
-
-
 
 
 @media screen and (max-width : 1300px) {
