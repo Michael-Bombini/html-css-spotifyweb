@@ -32,26 +32,15 @@
 
 
 
+.timebar:hover .timebar-i {
+    width: 100%;
+    transition: width 3.5s;
+}
 
 
-/* @media screen and (max-width : 1100px) {
-    .row {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-    
-    }
 
-    .square {
-        min-height: 300px;
-    }
 
-    .square .square-text h1 {
-        font-size: 0.6rem;
-    }
-    .square h2 {
-        font-size: 0.2rem;
-    }
-} */
+
 
 @media screen and (max-height : 500px) {
     .topbar {
