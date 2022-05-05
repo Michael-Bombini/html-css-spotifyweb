@@ -154,14 +154,17 @@ ul li , ol li {
 
 .sidebar-switch-section ul li:first-child::after {
     content: '';
-    width: 20px;
+    width: 35px;
     height: 30px;
     transform: rotate(90deg) translateY(150px);
     border-bottom: solid 5px #72A81F;
     position: absolute;
-    right: 50px;
-    top: 10px ;
+    right: 40px;
+    top: 6px;
+
 }
+
+
 
 
 .sidebar-switch-section ul li img {
@@ -270,7 +273,7 @@ ul li , ol li {
     border: 1px solid #fff;
     background: transparent;
     color: #fff;
-    margin-right: 0.3rem;
+    margin-right: 1.5rem;
     font-size: 0.8rem;
     text-align: center;
     padding: 1rem 2.5rem;
@@ -308,6 +311,27 @@ ul li , ol li {
     color: var(--color-white);
     cursor: pointer;
 }
+
+
+.nav-categories ul li:first-child {
+    position: relative;
+}
+
+.nav-categories ul li:first-child::after {
+    content: '';
+    width: 53px;
+    height: 26px;
+    transform: rotate(360deg) translateY(0);
+    border-bottom: solid 5px #72A81F;
+    position: absolute;
+    right: 40%;
+}
+
+
+
+
+
+
 
 /* -------------------------------------------- */
 
@@ -426,6 +450,8 @@ svg {
     vertical-align: middle;
 } 
 
+
+
 .player-left-img {
     width: 50px;
 }
@@ -441,7 +467,19 @@ svg {
     color: var(--color-gray-light);
 }
 
+.player-left-icons i:hover , .player-left-title h2:hover {
+    color: #fff;
+}
+
+
 .player-middle-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.player-middle-bottom {
     display: flex;
     align-items: center;
 }
@@ -459,8 +497,13 @@ svg {
     
 }
 
+
+.player-middle svg:nth-child(3):hover  {
+   transform: scale(1.2);
+    
+}
+
 .timebar {
-    width: 150px;
     height: 5px;
     border-radius: 20px;
     background: var(--color-gray);
@@ -468,6 +511,7 @@ svg {
     margin: 0 0.4rem;
     vertical-align: middle;
 }
+
 
 .timebar-i {
     width: 25%;
@@ -477,12 +521,46 @@ svg {
 }
 
 
+.player-middle .timebar {
+    width: 400px;
+    position: relative;
+}
+
+
+.timebar-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #72A81F;
+    position: absolute;
+    bottom: -7px;
+    left: 20%;
+    display: none;
+}
+
+.player-middle .timebar:hover .timebar-i {
+    background: #72A81F;
+}
+
+.player-middle .timebar:hover .timebar-circle {
+    display: block;
+}
+
+
+
+
+
 .player-right svg {
     width: 20px;
     height: 20px;
     margin: 0.8rem;
     fill: var(--color-white);
     vertical-align: middle;
+}
+
+
+.player-right .timebar {
+    width: 150px;
 }
 
 /* -------------------------------------------- */
@@ -498,6 +576,10 @@ svg {
         flex-basis: calc(100% / 4 - 30px);
     }
     
+    .player-middle .timebar {
+        width: 100%;
+    }
+
 } 
 
 
@@ -507,6 +589,8 @@ svg {
     .square {
         flex-basis: calc(100% / 3 - 30px);
     }
+
+    
     
 }
 
@@ -515,6 +599,7 @@ svg {
     .square {
         flex-basis: calc(100% / 2 - 30px);
     }
+
 
 
     .player-left-icons i {
