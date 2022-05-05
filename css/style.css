@@ -664,7 +664,18 @@ svg {
         display: none;
     }
 
+    .player-right {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .player-right .timebar {
+        width: 50px;
+    }
+
 }
+
+
 
 
 
