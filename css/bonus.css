@@ -32,11 +32,6 @@
 
 
 
-.timebar:hover .timebar-i {
-    width: 100%;
-    transition: width 3.5s;
-}
-
 
 
 
@@ -45,3 +40,13 @@
         display: none;
     }
 }
+
+
+
+
+.player-middle-top:hover ~ .player-middle-bottom  .timebar-i{
+    width: 100%;
+    transition : all 2.5s;
+    background: #72A81F;
+}
+
