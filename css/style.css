@@ -521,8 +521,8 @@ svg {
 }
 
 
-.player-middle .timebar {
-    width: 400px;
+.timebar {
+    width: 100px;
     position: relative;
 }
 
@@ -538,15 +538,17 @@ svg {
     display: none;
 }
 
-.player-middle .timebar:hover .timebar-i {
+.timebar:hover .timebar-i {
     background: #72A81F;
 }
 
-.player-middle .timebar:hover .timebar-circle {
+.timebar:hover .timebar-circle {
     display: block;
 }
 
-
+.player-middle .timebar {
+    width: 400px;
+}
 
 
 
@@ -554,8 +556,12 @@ svg {
     width: 20px;
     height: 20px;
     margin: 0.8rem;
-    fill: var(--color-white);
+    fill: var(--color-gray-light);
     vertical-align: middle;
+}
+
+.player-right svg:hover {
+    fill: var(--color-white);
 }
 
 
@@ -570,15 +576,13 @@ svg {
 /* MEDIA QUERY */
 
 
- @media screen and (max-width : 1300px) {
+ @media screen and (max-width : 1200px) {
 
     .square {
         flex-basis: calc(100% / 4 - 30px);
     }
     
-    .player-middle .timebar {
-        width: 100%;
-    }
+   
 
 } 
 
@@ -590,6 +594,9 @@ svg {
         flex-basis: calc(100% / 3 - 30px);
     }
 
+    .player-middle .timebar {
+        width: 300px;
+    }
     
     
 }
@@ -602,11 +609,18 @@ svg {
 
 
 
+
     .player-left-icons i {
         display: block;
         margin-bottom: 0.4rem;
     }
     
+
+    .player-middle .timebar {
+        width: 200px;
+    }
+    
+
 }
 
 
